@@ -1,0 +1,4 @@
+
+ module_header_tags_bing_metatag_analytics_title = Do  you want install the Microsoft Bing statistics tool ?
+ module_header_tags_bing_metatag_analytics_description = Add a script allowing to see the site statistic
+
