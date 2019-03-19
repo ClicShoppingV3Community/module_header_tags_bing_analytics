@@ -37,7 +37,7 @@
 
       $CLICSHOPPING_Template = Registry::get('Template');
 
-      $CLICSHOPPING_Template->addBlock('<meta name="msvalidate.01" content="'. MODULE_HEADER_TAGS_BING_METATAG_ANALYTICS_NUMBER .'">', $this->group);
+      $CLICSHOPPING_Template->addBlock('<meta name="msvalidate.01" content="' . MODULE_HEADER_TAGS_BING_METATAG_ANALYTICS_NUMBER . '">', $this->group);
     }
 
     public function isEnabled() {
@@ -58,7 +58,7 @@
           'configuration_description' => 'Souhaitez vous activer ce module ?',
           'configuration_group_id' => '6',
           'sort_order' => '1',
-          'set_function' => 'clic_cfg_set_boolean_value(array(\'true\', \'false\'))',
+          'set_function' => 'clic_cfg_set_boolean_value(array(\'True\', \'False\'))',
           'date_added' => 'now()'
         ]
       );
@@ -86,10 +86,6 @@
           'date_added' => 'now()'
         ]
       );
-
-      return $CLICSHOPPING_Db->save('configuration', ['configuration_value' => '1'],
-                                               ['configuration_key' => 'WEBSITE_MODULE_INSTALLED']
-                            );
     }
 
     public function remove() {
